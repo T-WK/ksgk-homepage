@@ -321,6 +321,11 @@ section {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 18px;
 }
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
 .card {
   background-color: #fff;
   border-radius: var(--radius-lg);
@@ -579,6 +584,9 @@ footer {
   .cta-inner {
     grid-template-columns: minmax(0, 1fr);
   }
+  .card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
   .hero {
     padding-top: 80px;
   }
@@ -601,6 +609,15 @@ footer {
   .grid-3,
   .grid-2 {
     grid-template-columns: minmax(0, 1fr);
+  }
+  .card-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .form-row {
+    flex-direction: column;
+  }
+  .form-group {
+    width: 100%;
   }
   .hero-title {
     font-size: 2rem;
